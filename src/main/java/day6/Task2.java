@@ -13,5 +13,8 @@ public class Task2 {
         airplane.fillUp(100);
         airplane.info();
 
+
+        System.out.println(airplane);
+
     }
 }
