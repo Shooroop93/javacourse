@@ -16,7 +16,6 @@ public class Task2 {
             delitelb = scanner.nextDouble();
 
             if(delitelb == 0){
-                flag = false;
                 break;
             }
 
