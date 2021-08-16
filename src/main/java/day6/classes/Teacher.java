@@ -43,7 +43,7 @@ public class Teacher {
             case 4:
                 grade = "хорошо";
                 break;
-            case 5:
+            default:
                 grade = "отлично";
                 break;
         }

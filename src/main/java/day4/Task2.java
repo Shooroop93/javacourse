@@ -6,16 +6,16 @@ import java.util.Random;
 public class Task2 {
     public static void main(String[] args) {
 
+        int lengthArray = 100;
         int maxNum = 0;
-        int minNum = 0;
         int countNum0 = 0;
         int sumCountNum0 = 0;
 
         Random random = new Random();
 
-        int[] numbers = new int[100];
+        int[] numbers = new int[lengthArray];
 
-        for (int i = 0; i <100; i++){
+        for (int i = 0; i <lengthArray; i++){
             numbers[i] = random.nextInt(10000);
         }
 
@@ -33,8 +33,6 @@ public class Task2 {
         }
 
 
-
-        System.out.printf("Наибольший элемент массива: %d\n",maxNum);
         System.out.printf("Наибольший элемент массива: %d\n",Arrays.stream(numbers).max().hashCode());
         System.out.printf("Наименьший элемент массива: %d\n",Arrays.stream(numbers).min().hashCode());
         System.out.printf("Количество элементов массива, оканчивающихся на 0: %d\n",countNum0);

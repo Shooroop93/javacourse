@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class Task1 {
     public static void main(String[] args) {
 
-        int countLenghtArray = 0;
         int countNumBol8 = 0;
         int countNum1 = 0;
         int countChetNum = 0;
@@ -31,8 +30,7 @@ public class Task1 {
             }
             if (num % 2 == 0){
                 countChetNum++;
-            }
-            if (num % 2 != 0){
+            }else {
                 countNeChetNum++;
             }
             sumAllNum = sumAllNum + num;

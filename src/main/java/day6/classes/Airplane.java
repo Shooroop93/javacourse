@@ -8,7 +8,13 @@ public class Airplane {
     private int weight;
     private int fuel;
 
-
+    public Airplane(String producer, int year, int length, int weight) {
+        this.producer = producer;
+        this.year = year;
+        this.length = length;
+        this.weight = weight;
+        this.fuel = 0;
+    }
 
     public void setProducer(String producer) {
         this.producer = producer;
@@ -34,17 +40,8 @@ public class Airplane {
         return fuel;
     }
 
-    public Airplane(String producer, int year, int length, int weight) {
-        this.producer = producer;
-        this.year = year;
-        this.length = length;
-        this.weight = weight;
-        this.fuel = 0;
-    }
-
-    public int fillUp (int n) {
+    public void fillUp (int n) {
         fuel += n;
-        return fuel;
     }
 
     public void info() {
