@@ -11,5 +11,10 @@ public class Task1 {
                 break;
             }
         }
+        System.out.println();
+
+        for (int i = 0; i < 10; i ++) {
+            System.out.print("JAVA ");
+        }
     }
 }
