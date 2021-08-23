@@ -18,7 +18,7 @@ public class Task1 {
         user2.sendMessage(user1, "Hi");
         user2.sendMessage(user1, "!!");
         user2.sendMessage(user1, ":)");
-        user3.sendMessage(user1, "Hi users1 1");
+        user3.sendMessage(user1, "Hi "+ user1 +" 1");
         user3.sendMessage(user1, "Hi users1 2");
         user3.sendMessage(user1, "Hi users1 3");
         user1.sendMessage(user3, "Hi user3 1");
@@ -26,9 +26,9 @@ public class Task1 {
         user1.sendMessage(user3, "Hi user3 3");
         user3.sendMessage(user1, "QWFwqg");
 
-//        MessageDatabase.showDialog(user1, user3);
-//        System.out.println();
-//        System.out.println(MessageDatabase.getMessages());
+        MessageDatabase.showDialog(user1, user3);
+        System.out.println();
+        System.out.println(MessageDatabase.getMessages());
 
         System.out.println(user1.isSubscribed(user3));
         user1.subscribe(user3);
