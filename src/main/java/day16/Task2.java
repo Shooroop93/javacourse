@@ -20,7 +20,7 @@ public class Task2 {
         writeRandomNumbersInFile1(text1);
         writeNumbersInFile2(text1, text2);
         printResult(text2);
-        
+
     }
     public static void writeRandomNumbersInFile1 (File file) {
 
