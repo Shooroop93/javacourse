@@ -81,19 +81,12 @@ public class Task2 {
         chessPieces[7][6] = ChessPiece.KING_WHITE.getColor();
         chessPieces[7][7] = ChessPiece.EMPTY.getColor();
 
-
-
-
         for (int i = 0; i < chessPieces.length; i++) {
             for (int j = 0; j < chessPieces[i].length; j++) {
                 System.out.print(chessPieces[i][j]);
             }
             System.out.println();
         }
-
-
-
-
 
     }
 }
