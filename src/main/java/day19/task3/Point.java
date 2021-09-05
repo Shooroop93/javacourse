@@ -1,5 +1,7 @@
 package day19.task3;
 
+import java.util.StringJoiner;
+
 /**
  * @author Neil Alishev
  */
@@ -36,5 +38,13 @@ class Point {
         int result = x;
         result = 31 * result + y;
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", Point.class.getSimpleName() + "[", "]")
+                .add("x=" + x)
+                .add("y=" + y)
+                .toString();
     }
 }
